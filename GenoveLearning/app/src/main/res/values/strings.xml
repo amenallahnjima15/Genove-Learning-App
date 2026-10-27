@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Genove Learning</string>
+    <string name="welcome_tagline">Learn smarter,\nguided by AI</string>
+    <string name="welcome_start">Get Started</string>
+    <string name="catalog_greeting">Hello, %1$s</string>
+    <string name="catalog_subgreeting">Ready to continue learning today?</string>
+    <string name="catalog_search_hint">Search courses, skills, instructors…</string>
+    <string name="catalog_section">Course Catalog</string>
+    <string name="catalog_see_all">See all</string>
+    <string name="catalog_empty">No courses found matching your search.</string>
+    <string name="cat_all">All</string>
+    <string name="cat_dev">Development</string>
+    <string name="cat_ai">Artificial Intelligence</string>
+    <string name="cat_data">Data &amp; BI</string>
+    <string name="cat_business">Business</string>
+    <string name="nav_catalog">Catalog</string>
+    <string name="nav_enrollments">My Courses</string>
+    <string name="nav_savoir">Explore</string>
+    <string name="nav_profile">Profile</string>
+    <string name="cd_logo">Genove Learning Logo</string>
+    <string name="cd_filter">Filter courses</string>
+    <string name="cd_profile">Profile</string>
+    <string name="course_duration_hours">%1$d hrs</string>
+</resources>

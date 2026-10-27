@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Genove" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/gl_primary</item>
+        <item name="colorPrimaryVariant">@color/gl_primary_dark</item>
+        <item name="colorOnPrimary">@color/gl_white</item>
+        <item name="colorSecondary">@color/gl_ai_accent</item>
+        <item name="android:colorBackground">@color/gl_bg</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">@color/gl_white</item>
+    </style>
+
+    <style name="Theme.Genove.Welcome" parent="Theme.Genove">
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:navigationBarColor">@color/gl_navy_deep</item>
+    </style>
+
+    <style name="Widget.Genove.Button" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/gl_primary</item>
+        <item name="android:textColor">@color/gl_white</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:minHeight">@dimen/touch_min</item>
+        <item name="cornerRadius">14dp</item>
+    </style>
+
+    <style name="Widget.Genove.Chip" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="chipBackgroundColor">@color/chip_bg_selector</item>
+        <item name="android:textColor">@color/chip_text_selector</item>
+        <item name="chipStrokeColor">@color/gl_stroke</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="chipMinHeight">40dp</item>
+        <item name="checkedIconVisible">false</item>
+        <item name="chipIconVisible">false</item>
+        <item name="android:textSize">13sp</item>
+        <item name="chipCornerRadius">12dp</item>
+    </style>
+
+    <style name="TextAppearance.Genove.Title" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:textColor">@color/gl_text</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

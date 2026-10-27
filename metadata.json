@@ -1,0 +1,6 @@
+{
+  "name": "Genove Learning - Catalogue Studio",
+  "description": "Visualiseur et générateur de code pour le catalogue mobile de Genove Learning avec prévisualisation interactive Android et code prêt à copier-coller.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

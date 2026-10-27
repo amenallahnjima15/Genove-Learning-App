@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_clay_screen"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingHorizontal="22dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="28dp">
+
+        <!-- Top Navigation with Back Arrow -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <ImageButton
+                android:id="@+id/btnBackToLogin"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_centerVertical="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Retour à la connexion"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_back_arrow"
+                app:tint="#372A5B" />
+        </RelativeLayout>
+
+        <!-- Circular Avatar with Plus Badge (Matching Screenshot) -->
+        <FrameLayout
+            android:layout_width="92dp"
+            android:layout_height="92dp"
+            android:layout_marginTop="2dp">
+
+            <ImageView
+                android:id="@+id/imgRegisterAvatar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="Photo de profil"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_register_avatar" />
+        </FrameLayout>
+
+        <!-- Typography matching Login Page ("Welcome Back" style) -->
+        <TextView
+            android:id="@+id/tvCreateAccountTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Create Account"
+            android:textColor="#1E1B2E"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvCreateAccountSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="Sign up to get started with your dashboard."
+            android:textColor="#7E789B"
+            android:textSize="13sp" />
+
+        <!-- Form Fields Container with exact claymorphic style and labels -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:orientation="vertical">
+
+            <!-- Field 1: Full Name -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginBottom="6dp"
+                android:text="Full Name"
+                android:textColor="#372A5B"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_input_register"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="14dp">
+
+                <EditText
+                    android:id="@+id/etRegisterName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="Enter your name"
+                    android:importantForAutofill="no"
+                    android:inputType="textPersonName|textCapWords"
+                    android:textColor="#372A5B"
+                    android:textColorHint="#968EA8"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <!-- Field 2: Email -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="6dp"
+                android:text="Email"
+                android:textColor="#372A5B"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_input_register"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="14dp">
+
+                <EditText
+                    android:id="@+id/etRegisterEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="Enter your email"
+                    android:importantForAutofill="no"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#372A5B"
+                    android:textColorHint="#968EA8"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <!-- Field 3: Password -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="6dp"
+                android:text="Password"
+                android:textColor="#372A5B"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_input_register"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="14dp">
+
+                <EditText
+                    android:id="@+id/etRegisterPassword"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="Create a password"
+                    android:importantForAutofill="no"
+                    android:inputType="textPassword"
+                    android:textColor="#372A5B"
+                    android:textColorHint="#968EA8"
+                    android:textSize="13sp" />
+
+                <ImageButton
+                    android:id="@+id/btnToggleRegPassword"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Toggle Password"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_eye_clay" />
+            </LinearLayout>
+
+            <!-- Field 4: Confirmation de password (demandé explicitement) -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="6dp"
+                android:text="Confirmation de mot de passe"
+                android:textColor="#372A5B"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_input_register"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="14dp">
+
+                <EditText
+                    android:id="@+id/etRegisterConfirmPassword"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="Confirm your password"
+                    android:importantForAutofill="no"
+                    android:inputType="textPassword"
+                    android:textColor="#372A5B"
+                    android:textColorHint="#968EA8"
+                    android:textSize="13sp" />
+
+                <ImageButton
+                    android:id="@+id/btnToggleRegConfirmPassword"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Toggle Confirm Password"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_eye_clay" />
+            </LinearLayout>
+
+            <!-- Primary Action Button: Create Account (Gradient Clay Violet identique au bouton Login) -->
+            <Button
+                android:id="@+id/btnSubmitRegister"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_clay_button"
+                android:elevation="6dp"
+                android:stateListAnimator="@null"
+                android:text="Create Account"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Divider: Or with line dividers -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="#E5DFD7" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="12dp"
+                android:text="Or"
+                android:textColor="#8E85A8"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="#E5DFD7" />
+        </LinearLayout>
+
+        <!-- Social Round Buttons: Google, Apple, LinkedIn -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!-- Google -->
+            <ImageButton
+                android:id="@+id/btnRegisterGoogle"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_marginEnd="14dp"
+                android:background="@drawable/bg_clay_social_circle"
+                android:contentDescription="Google Sign In"
+                android:elevation="3dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_google_logo" />
+
+            <!-- Apple -->
+            <ImageButton
+                android:id="@+id/btnRegisterApple"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_marginHorizontal="7dp"
+                android:background="@drawable/bg_clay_social_circle"
+                android:contentDescription="Apple Sign In"
+                android:elevation="3dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_apple_logo" />
+
+            <!-- LinkedIn -->
+            <ImageButton
+                android:id="@+id/btnRegisterLinkedIn"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_marginStart="14dp"
+                android:background="@drawable/bg_clay_social_circle"
+                android:contentDescription="LinkedIn Sign In"
+                android:elevation="3dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_linkedin_logo" />
+        </LinearLayout>
+
+        <!-- Bottom Link to Login: "Already have an account? Sign In" -->
+        <TextView
+            android:id="@+id/tvGoToLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="8dp"
+            android:text="Already have an account? Sign In"
+            android:textColor="#7E789B"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>

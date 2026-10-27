@@ -1,0 +1,54 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="180dp"
+    android:height="60dp"
+    android:viewportWidth="180"
+    android:viewportHeight="60">
+
+    <!-- Planet Base Sphere for 'o' -->
+    <path
+        android:fillColor="#E5989B"
+        android:pathData="M102,30m-13,0a13,13 0,1 1,26 0a13,13 0,1 1,-26 0"/>
+
+    <!-- Orbital Ring back half -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#F59E0B"
+        android:strokeWidth="3.2"
+        android:strokeLineCap="round"
+        android:pathData="M83,23 C85,15 119,15 121,37"/>
+
+    <!-- 'Gen' Letters -->
+    <!-- 'G' -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M38,30 C38,20 28,20 23,24 C18,28 18,34 22,38 C26,42 34,42 37,38 L37,33 L28,33 L28,29 L42,29 L42,39 C36,45 23,45 17,39 C11,33 11,24 18,17 C25,10 37,12 43,18 Z"/>
+    
+    <!-- 'e' -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M60,30 L47,30 C47,25 51,21 56,21 C60,21 62,23 63,26 L67,24 C65,19 61,17 56,17 C48,17 43,23 43,31 C43,39 48,44 56,44 C63,44 67,39 67,32 L60,32 Z"/>
+
+    <!-- 'n' -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M71,18 L75,18 L75,22 C77,18 81,17 85,17 C92,17 93,22 93,28 L93,43 L89,43 L89,29 C89,24 87,21 82,21 C77,21 75,24 75,30 L75,43 L71,43 Z"/>
+
+    <!-- Orbital Ring front half (passes in front of planet) -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#F59E0B"
+        android:strokeWidth="3.6"
+        android:strokeLineCap="round"
+        android:pathData="M121,37 C119,45 85,45 83,23"/>
+
+    <!-- 'v' -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M120,18 L125,18 L132,37 L139,18 L144,18 L134,43 L130,43 Z"/>
+
+    <!-- 'e' -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M162,30 L149,30 C149,25 153,21 158,21 C162,21 164,23 165,26 L169,24 C167,19 163,17 158,17 C150,17 145,23 145,31 C145,39 150,44 158,44 C165,44 169,39 169,32 L162,32 Z"/>
+</vector>

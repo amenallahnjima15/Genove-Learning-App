@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand Primary Colors -->
+    <color name="gl_primary">#2563EB</color>
+    <color name="gl_primary_dark">#1E3A8A</color>
+    <color name="gl_primary_light">#EFF6FF</color>
+    <color name="gl_navy">#0B1B5C</color>
+    <color name="gl_navy_deep">#081445</color>
+    
+    <!-- Backgrounds & Surfaces -->
+    <color name="gl_bg">#F8FAFC</color>
+    <color name="gl_surface">#FFFFFF</color>
+    <color name="gl_field">#F1F5F9</color>
+    <color name="gl_field_focused">#FFFFFF</color>
+    
+    <!-- Text Colors -->
+    <color name="gl_text">#0F172A</color>
+    <color name="gl_text_secondary">#64748B</color>
+    <color name="gl_text_muted">#94A3B8</color>
+    
+    <!-- Borders & Dividers -->
+    <color name="gl_stroke">#E2E8F0</color>
+    <color name="gl_card_stroke">#E2E8F0</color>
+    
+    <!-- Accent & Highlights -->
+    <color name="gl_ai_accent">#6366F1</color>
+    <color name="gl_rating_star">#F59E0B</color>
+    <color name="gl_rating_bg">#FEF3C7</color>
+    <color name="gl_success">#10B981</color>
+    
+    <!-- Card Category Accents (legacy & tags) -->
+    <color name="gl_card_blue">#DCE8FF</color>
+    <color name="gl_card_violet">#E6E5FF</color>
+    <color name="gl_card_orange">#FFE6D5</color>
+    <color name="gl_card_green">#D9F5E6</color>
+    
+    <!-- Neutrals -->
+    <color name="gl_white">#FFFFFF</color>
+</resources>
